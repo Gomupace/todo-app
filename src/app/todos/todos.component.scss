@@ -23,6 +23,10 @@
   box-shadow: 0 4px 12px rgba(black, 0.2);
 }
 
+.field.is-grouped {
+  margin: 0;
+}
+
 .todo-item {
   display: flex;
   align-items: center;
