@@ -11,13 +11,13 @@
   }
 }
 
-.container {
+.container.add-todo-box {
   max-width: 800px;
 }
 
 .add-todo-box-container {
   position: sticky;
-  top: 0;
+  top: 10px;
   z-index: 1;
 }
 
