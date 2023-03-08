@@ -1,4 +1,12 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+  ViewChild,
+} from '@angular/core';
 import { Todo } from '../shared/todo.model';
 
 @Component({
@@ -11,6 +19,8 @@ export class TodoItemComponent implements OnInit {
   @Output() todoClicked: EventEmitter<void> = new EventEmitter();
   @Output() editClicked: EventEmitter<void> = new EventEmitter();
   @Output() deleteClicked: EventEmitter<void> = new EventEmitter();
+
+  @ViewChild('editBtn') editBtnElRef!: ElementRef<HTMLElement>;
 
   constructor() {}
 
